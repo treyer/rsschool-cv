@@ -13,5 +13,21 @@ Since then I've studied by myself web sites building using the Codeigniter frame
 I like programming, like to learn new languages ​​and technologies.
 Today my dream is to become a professional programmer and get a job in IT company.
 
+### Programming skills
+* Programming languages:
+    * Java (sertified)
+    * HTML
+    * CSS
+    * PHP
+    * SQL
+    * JavaScript
+    * TypeScript
+* Frameworks: 
+    * Spring MVC
+    * Hibernate
+    * Bootstrap
+    * jQuery
+    * Angular 2+
+
 
 
