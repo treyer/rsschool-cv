@@ -102,3 +102,18 @@ img {
     background-color: #99ccff;
     border-radius: 150px 0 0 0;
 }
+
+footer {
+    float: left;
+    width: 100%;
+    background-color: #99ccff;
+    border-top: 4px solid #ffffff;
+}
+
+table {
+    width: 250px;
+}
+
+table img {
+    margin-left: 25px;
+}
