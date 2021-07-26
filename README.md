@@ -1,1 +1,1 @@
-https://treyer.github.io/rsschool-cv/cv
+https://treyer.github.io/rsschool-cv/
