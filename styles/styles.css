@@ -271,6 +271,13 @@ table img {
     border: none;
 }
 
+/* video block */
+.video-wrapper{
+    width: 100%;
+}
+/* video block END*/
+
+
 /* Media Queries */
 @media (max-width: 900px){
     .nav-container{
