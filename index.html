@@ -6,15 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Andrei Kazhanenka</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
     <div class="main-wrapper">
         <header>
+
+            <div class="allScreen"></div>
+
             <div class="header">
                 <div class="burger-menu">
                     <img class="burger" src="img/burger.png" alt="Menu sign">
                     <div class="burger-navigation">
-                        <nav class="burger-navigation">
+                        <nav>
                             <ul class="burger-nav-container">
                                 <li class="nav-item-burger"><a class="nav-text-style" href="#about">About</a></li>
                                 <li class="nav-item-burger"><a class="nav-text-style" href="#contacts">Contacts</a></li>
@@ -46,7 +52,9 @@
             <div class="head-wrapper">
                 <div class="cv-photo">
                     <div class="img-background">
-                        <img class="photo" src="img/avatar1.jpg" alt="My photo" width="247" height="247">
+                        <figure>
+                            <img class="photo" src="img/avatar1.jpg" alt="My photo" width="247" height="247">
+                        </figure>
                     </div>
                 </div>
 
@@ -71,18 +79,18 @@
             <div class="main-content-wrapper">
                 <div class="right-block">
                     <div class="right-block-inner">
-                        <section>
-                            <h3 class="colored-blue">contacts</h3>
+                        <section class="contacts-block">
+                        <h3 class="colored-blue" id="contacts">contacts</h3>
                             <ul>
-                                <li class="phone">+375295529283</li>
-                                <li class="skype">treyer10</li>
-                                <li class="email">nemereno_by@mail.ru</li>
-                                <li class="viber">+375295529283</li>
+                                <li><b>Telephone number: </b>+375295529283</li>
+                                <li><b>Skype: </b>treyer10</li>
+                                <li><b>Email: </b>nemereno_by@mail.ru</li>
+                                <li><b>Viber: </b>+375295529283</li>
                             </ul>
                         </section>
     
-                        <section>
-                            <h3 class="colored-blue">skills</h3>
+                        <section class="skills-block">
+                            <h3 class="colored-blue" id="skills">skills</h3>
                             <ul>
                                 <li>Programming languages:
                                     <ul>
@@ -108,41 +116,98 @@
                             <p>Advanced Adobe Photoshop user.</p>
                             <p>Got advanced video editing skills using Movavi Video Suite package.</p>
                         </section>
-                    </div>
+                    </div> 
                 </div>
 
-                <div class="left-block">
+                 <div class="left-block">
                     <div class="background-blue">
                         <div class="left-block-inner">
-                            <section>
+                            <article id="experience">
                                 <h3 class="colored-white">work experience:</h3>
-                                <p class="p-first">Since 2011 I've studied by myself web sites building using the Codeigniter framework (PHP). Using it I've made about a dozen of web-sites for my relatives and friends (example <a href="http://www.virtus-tir.by">http://www.virtus-tir.by</a>), some of them were difficult projects for commercial use. In 2015 I've attended the course Programming language Java, since then I've made some test projects using Spring MVC and related technologies. Nowadays I'm trying to create commercial project in entertainment sphere using Spring MVC, Angular and related technologies.</p>
-                            </section>
+                                <p class="p-first">Since 2011 I've studied by myself web sites building using the Codeigniter framework (PHP). Using it I've made about a dozen of web-sites for my relatives and friends, some of them were difficult projects for commercial use. In 2015 I've attended the course Programming language Java, since then I've made some test projects using Spring MVC and related technologies. Nowadays I'm trying to create commercial project in entertainment sphere using Spring MVC, Angular and related technologies.</p>
+                                <div class="examples-wrapper">
+                                    <div class="example">
+                                        <figure>
+                                            <figcaption class="example-header">Curtains salon website</figcaption>
+                                            <a href="http://www.ovates.by" target="_blank">
+                                                <img class="example-img" src="img/diana-site-example.jpg" alt="curtains salon website">
+                                            </a>
+                                            <p class="example-text"><b>About: </b>Website has administration panel. My first project ever.</p>
+                                            <p class="example-text"><b>Used: </b>CSS, HTML, JavaScript, PHP, CodeIgniter (PHP framework)</p>
+                                        </figure>
+                                    </div>
+                                    <div class="example">
+                                        <figure>
+                                            <figcaption class="example-header">Coffins production company website</figcaption>
+                                            <a href="http://www.virtus-tir.by" target="_blank">
+                                                <img class="example-img" src="img/virtus-site-example.jpg" alt="coffins production company">
+                                            </a>
+                                            <p class="example-text"><b>About: </b>Website was made for my father-in-law who is co-owner of this business.</p>
+                                            <p class="example-text"><b>Used: </b>CSS, HTML, JavaScript, PHP, CodeIgniter (PHP framework)</p>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </article>
     
-                            <section>
+                            <article id="education">
                                 <h3 class="colored-white">education:</h3>
                                 <p class="p-first">Mostly self-education by reading guides, watching video lessons. </p>
+                                <p>2005 Belarusian State Economic University, faculty of marketing</p>
                                 <p>In 2015 completed course Programming language Java (80 academic hours, NewPoint, Voitsekhovich Leonid).</p>
                                 <p>Attended Brest Java Course 2017 (EPAM Brest)</p>
-                                <p>2005 Belarusian State Economic University, faculty of marketing</p>
-                            </section>
+                            </article>
                             
-                            <section>
+                            <article id="languages">
                                 <h3 class="colored-white">foreign languages level</h3>
                                 <p class="p-first"><b>English: </b>Intermediate. Have good conversation skills, wide dictionary in programming sphere. Got constant speaking practice working as a freelancer for European company.</p>
                                 <p><b>Spanish: </b>basic (studied at school)</p>
-                            </section>
+                            </article>
                         </div>
                     </div>
-                </div>
+                </div> 
             </div>
 
-            <div class="video-wrapper">
-                <iframe width="100%" height="600px" src="https://www.youtube.com/embed/dVyrgCX6RrE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="video-wrapper" id="video">
+                <section>
+                    <h3 class="colored-blue video-header">my cv video</h3>
+                    <iframe class="video-frame" height="500" src="https://www.youtube.com/embed/dVyrgCX6RrE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>My CV video. You could see transcription for this video <a href="https://docs.google.com/document/d/1mYufjYMSk-p1Vq4bJ4s17gPt0g0xdPAvWeQeP-5LRJc/edit?usp=sharing" target="_blank">here</a></p>
+                </section>
             </div>
 
-            <div class="code-wrapper">
-
+            <div class="code-wrapper" id="code-example">
+                <section>
+                    <h3 class="colored-blue video-header">code example</h3>
+                    <pre>
+                        <code class="js" style="white-space: pre-wrap; word-break: break-all;">
+                            module.exports = function toReadable (number) {
+                                const singleDigitNumsInString = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
+                                const twoDigitNumsExceptions = ['ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 
+                                'seventeen', 'eighteen', 'nineteen'];
+                                const twoDigitNums = ['twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'];
+                            
+                                const numberLength = String(number).length;
+                            
+                                if (number % 100 >= 10 && number % 100 &lt;= 19){//exceptions
+                                    if (numberLength === 3) {
+                                        return `${singleDigitNumsInString[+('' + number)[0]]} hundred ${twoDigitNumsExceptions[number % 100 - 10]}`;
+                                    } else {
+                                        return `${twoDigitNumsExceptions[number % 100 - 10]}`;
+                                    }
+                                } else if (numberLength === 1){//normal numbers
+                                    return `${singleDigitNumsInString[number]}`;
+                                } else if (numberLength === 2){
+                                    return `${twoDigitNums[+('' + number)[0] - 2]}${((+('' + number)[1]) !== 0) ? ' ' + 
+                                    singleDigitNumsInString[+('' + number)[1]] : ''}`;
+                                } else if (numberLength === 3){
+                                    return `${singleDigitNumsInString[+('' + number)[0]]} hundred${((+('' + number)[1]) !== 0) ? ' ' + 
+                                    twoDigitNums[+('' + number)[1] - 2] : ''}${((+('' + number)[2]) !== 0) ? ' ' +
+                                      singleDigitNumsInString[+('' + number)[2]]: ''}`;
+                                }
+                            }
+                        </code>
+                    </pre>
+                </section>
             </div>
         </main>
 
