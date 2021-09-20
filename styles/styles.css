@@ -1,0 +1,422 @@
+@font-face {
+    font-family: Forum;
+    src: url("../fonts/Forum-Regular.ttf");
+  }
+
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto-Thin.ttf");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto-Light.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto-Medium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto-Bold.ttf");
+    font-weight: 700;
+}
+
+:root {
+    --font-blue: #051F7B;
+    --font-light-blue: #3399cc;
+}
+
+*{
+ margin: 0;
+}
+
+html {
+    color: var(--font-blue);
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto";
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+h2,
+h3 {
+    font-variant: small-caps;
+}
+
+h3 {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.colored-blue {
+    background-color: #3399cc;
+    color: #ffffff;
+}
+
+.colored-white {
+    background-color: #ffffff;
+    color: #051F7B;
+}
+
+.p-first {
+    margin-top: 8px;
+}
+
+.main-wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    min-width: 320px;
+}
+
+.no-markers {
+    list-style-type: none;
+}
+
+.allScreen{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: none;
+}
+
+/* Header */
+.head-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burger-nav-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5px;
+    margin: 0;
+    text-align: center;
+}
+
+.navigation {
+    max-width: 1200px;
+    min-width: 320px;
+    flex-grow: 1;
+}
+
+.nav-text-style{
+    color: var(--font-blue);
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 50px;
+    letter-spacing: 2px;
+}
+
+.nav-item,
+.nav-item-burger {
+    list-style: none;
+}
+
+.nav-item a,
+.nav-item-burger a {
+    text-decoration: none;
+}
+
+.nav-item a:hover,
+.nav-item a:active {
+    color: var(--font-light-blue);
+}
+
+.nav-item-burger a:hover,
+.nav-item-burger a:active {
+    color: orange;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.burger {
+    width: 90px;
+    height: 90px;
+    transition: 0.4s;
+}
+
+.burger:hover{
+    cursor: pointer;
+    filter: brightness(120%);
+}
+
+.burger-navigation{
+    position: absolute;
+    top:40px;
+    left: 35px;
+    background-color: white;
+    border: 2px solid var(--font-light-blue);
+    z-index: 999;
+    display: none;
+}
+/* Header END*/
+.main-content-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.main-info {
+    margin-left: 20px;
+}
+
+li.phone,
+li.skype,
+li.email,
+li.viber {
+    list-style-type: none;
+    padding-left: 24px;
+    background-size: 24px;
+}
+
+li.phone {
+    background: url(../img/phone-call-icon.svg) no-repeat 0 0;
+
+}
+li.skype {
+    background: url(../img/Skype.svg) no-repeat 0 0;
+}
+li.email {
+    background: url(../img/Mail.ru.svg) no-repeat 0 0;
+}
+li.viber {
+    background: url(../img/Viber.svg) no-repeat;
+}
+
+.wrapper {
+    width: 100%;
+    /* float: left; */
+    background-color: #dbdde4;
+}
+
+.main-info-inner {
+    padding: 10px 25px 10px;
+}
+
+.right-block,
+.left-block {
+    float: left;
+}
+
+.right-block {
+    width: 25%;
+}
+
+.left-block {
+    width: 75%;
+}
+
+.right-block-inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* display: block; */
+    /* padding: 60px 25px 10px 25px; */
+}
+
+
+.left-block-inner {
+    padding: 60px 25px 10px 60px;
+}
+
+.examples-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.example {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.example-header{
+    background-color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.example-text{
+    padding: 0 10px;
+    width: 100%;
+}
+
+.img-background{
+    margin-right: 20px;
+    margin-top: 110px;
+    border-radius: 0 150px 150px 0;
+    background-color: #99ccff;
+}
+
+.photo {
+    margin: 20px 20px 20px 200px;
+    border: 5px solid #000000;
+    border-radius: 50%;
+}
+
+.background-blue {
+    background-color: #99ccff;
+    border-radius: 150px 0 0 0;
+}
+
+footer {
+    float: left;
+    width: 100%;
+    background-color: #99ccff;
+    border-top: 4px solid #ffffff;
+}
+
+table {
+    width: 250px;
+}
+
+table img {
+    margin-left: 25px;
+    border: none;
+}
+
+/* video block */
+.video-wrapper{
+    width: 100%;
+}
+.video-header{
+    margin-bottom: 20px;
+}
+
+.video-frame{
+    width: 100%;
+    height: 600px;
+}
+/* video block END*/
+
+/* code example */
+.code-wrapper{
+    width: 100%;
+}
+/* code example END*/
+
+/* Media Queries */
+@media (max-width: 930px){
+    .nav-container{
+        display: none;
+        /* flex-direction: column; */
+    }
+
+    .burger-menu {
+        display: block;
+        position: relative;
+    }
+
+    /* .burger-navigation{
+        
+    } */
+
+    .head-wrapper{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .img-background {
+        margin-top: 0;
+    }
+
+    .main-content-wrapper{
+        flex-direction: column;
+    }
+
+    .right-block {
+        width: 100%;
+        margin-left: 20px;
+        padding-left: 25px;
+    }
+
+    .left-block {
+        width: 100%;
+        padding-right: 25px;
+    }
+
+    .right-block-inner{
+        padding-top: 0;
+        flex-direction: row-reverse;
+    }
+
+    .skills-block, 
+    .contacts-block {
+        width: 50%;
+    }
+}
+
+@media (max-width: 720px){
+    .examples-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right-block-inner{
+        padding-top: 0;
+        flex-direction: column;
+    }
+
+    .skills-block, 
+    .contacts-block {
+        width:100%;
+    }
+}
+
+@media (max-width: 500px){
+    .cv-photo {
+        display: none;
+    }
+}
+/* Media Queries END*/
